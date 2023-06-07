@@ -1,0 +1,735 @@
+.root,.donateShop{
+	height:100%;
+	z-index: 1;
+	width:100%;
+}
+
+.DonateShopPanel{
+	height:601px;
+	width:1166px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/osnovnoi_logo.png');
+	vertical-align:center;
+	horizontal-align:center;
+	margin-bottom:10%;
+
+}
+#DonateShopTabsPanel{
+	margin-top:20px;
+	margin-left:100px;
+	width:1000px;
+	flow-children:right;	
+
+}
+.TabPanel{
+	width:150px;
+	height:39px;
+	margin-left:3%;
+}
+.TabPanelOnServ:hover{
+	background-color:#161617;
+	opacity: .8;
+}
+
+.TabLabel{
+	letter-spacing: 1px;
+	font-size:18px;
+	color:#C48733;
+	width:100%;
+	text-align:center;
+	vertical-align:center;
+	text-shadow: 2px 2px 8px 3.0 #222222;
+	
+}
+.TabContent{
+	width:100%;
+	flow-children:down;	
+}
+.horizontal_panel{
+	width:100%;
+	flow-children:right;
+	min-height:100px;
+}
+
+.DonateShopContentPanel{
+	margin-top:10px;
+	margin-left:10px;
+	height:475px;
+	width:1155px;
+	overflow: clip scroll;
+}
+
+.ShopCloseButton{
+	flow-children: right;
+	horizontal-align:right;
+	margin-top:5px;
+	margin-right:-5px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.DonateShopItemPanel, .DonateShopItem1{
+	width:180px;
+	height:220px;
+	margin-left:10px;
+	margin-top:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/back_items.png');
+	box-shadow: #00000080 2px 2px 4px 0px;
+}
+
+.DonateShopItem{
+	margin-left:10px;
+	margin-top:10px;
+	width:160px;
+	height:120px;
+	border:2px solid;
+	background-size:100%;
+	background-color:#12110f;
+}
+.DonateShopItemLabel{
+	width:100%;
+	height:30px;
+	margin-top:135px;
+	text-align:center;
+	color:purple;
+	font-size:21px;
+}
+.DonateShopItemButtonBuy{
+	width:160px;
+	height:30px;
+	margin-left:10px;
+	vertical-align:bottom;
+	margin-bottom:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/buy.png');
+	z-index: 100;
+	flow-children:right;
+}
+
+.DonateShopItemButtonBuy:hover
+{
+	width:161px;
+	height:31px;
+	brightness: 1.8;
+}
+
+.DonateMoneyLogoButton{
+	width:35px;
+	height:70%;
+	margin-left:20px;
+	
+}
+.DonateShopItemButtonHas{
+	width:160px;
+	height:30px;
+	margin-left:10px;
+	vertical-align:bottom;
+	margin-bottom:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/unset2.png');
+	box-shadow: #00000080 2px 2px 4px 0px;	
+}
+
+.DonateShopItemButtonHas:hover
+{
+	width:161px;
+	height:31px;
+	brightness: 1.8;
+}
+
+.DonateShopItemButtonLabel{
+	color:#A2712F;
+	text-shadow: 1px 1px 4px 3.0 #222222;
+	font-size:18px;
+	font-weight: bold;
+	width:100%;
+	vertical-align:center;
+	text-align:center;
+}
+.money_panel{
+	height:95px;
+	width:162px;
+	margin-top: 30px;
+	flow-children:down;
+	padding-left: 5px;
+	margin-left: 10px;
+//	background-color:red;
+}
+
+.DonateMoneyPanel{
+	margin-top: 10px;
+}
+
+.MMMRPointsPanel{
+	margin-top: 10px;
+}
+
+.lowPanel{
+	width:1166px;
+	height:493px;
+	vertical-align:bottom;
+	horizontal-align:center;
+	margin-bottom:10px;
+	background-color:#161617;
+	opacity: .8;
+}
+.DonateMoneyLogo3{
+	vertical-align:center;
+	height:25px;
+	width:25px;
+	margin-left:10px;
+	//text-shadow: 2px 2px 8px 3.0 #222222;
+}
+.MMMRPointsLogo{
+	vertical-align:center;
+	height:25px;
+	width:25px;
+	margin-left:10px;
+	margin-top:2px;
+}
+
+.DonateMoneyLabel{
+	color:#DB983B;
+	font-size:22px;
+	margin-left:45px;
+	margin-top:1px;
+	vertical-align:center;
+	text-shadow: 2px 2px 8px 3.0 #222222;
+}
+.openShop{
+	width:30px;
+	height:30px;
+	margin-left:255px;
+	margin-top:10px;
+	tooltip-position: bottom;
+	
+}
+.selected_bd{
+	background-color:#1C1C1E;
+}
+.selected_text{
+	color:#d76a00;
+}
+.DonateShopItem2{
+	width:180px;
+	height:247px;
+	background-color: #0a0a0a;
+	margin-left:8px;
+	margin-top:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/back_items.png');
+	box-shadow: #00000080 2px 2px 4px 0px;
+}
+
+.consumablesCoutPanel{
+	width:28px;
+	height:30px;
+	margin-left:138px;
+	margin-top:99px;
+}
+
+.DonateShopItemButtonBuyCon{
+	width:79px;
+	height:30px;
+	margin-left:10px;
+	margin-top:170px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/set.png');
+	box-shadow: #00000080 2px 2px 4px 0px;	
+}
+
+.DonateShopItemButtonBuyCon:hover
+{
+	width:80px;
+	height:31px;
+	brightness: 1.8;
+}
+
+.DonateShopItemButtonHasCon{
+	width:160px;
+	height:30px;
+	margin-left:10px;
+	margin-top:205px;
+    flow-children:right;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/buy.png');
+	box-shadow: #00000080 2px 2px 4px 0px;	
+}
+
+.DonateShopItemButtonHasCon:hover
+{
+	width:161px;
+	height:31px;
+	brightness: 1.8;
+}
+
+#DonateShopReturnItemBtn:hover {
+	font-size:0px;
+}
+.DonateShopItemButtonLabelGived2{
+	color:#A2712F;
+	text-shadow: 1px 1px 4px 3.0 #222222;
+	font-size:18px;
+	font-weight: bold;
+	width:100%;
+	vertical-align:center;
+	text-align:center;
+}
+
+#DonateShopReturnItemBtn:hover
+{
+	width:80px;
+	height:31px;
+	brightness: 1.8;
+}
+
+#DonateShopReturnItemBtn{
+    width:79px;
+	height:30px;
+	margin-left:91px;
+	margin-top:170px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/unset.png');
+	box-shadow: #00000080 2px 2px 4px 0px;
+}
+
+.shopButtonImg{
+	width:31px;
+	height:80%;
+	margin-top:10%;
+	
+}
+.shopButtonImgAndText{
+	horizontal-align:center;
+	flow-children:right;
+	height:100%;
+	
+}
+#shopButtonImg2{
+	width: 25px;
+	
+}
+.shop_button_1_params{
+	width: 160px;
+	height: 100%;
+	
+}
+.shop_button_2_params{
+	width: 80px;
+	height: 100%;
+	
+}
+.DonateShopItemButtonLabelNotAlign{
+	color:#C48733;
+	font-size:21px;	
+	vertical-align:center;
+	margin-right:5px;
+}
+.DonateShopItemButtonLabelStock{
+	color:#ffc575;
+	font-size:19px;
+	width:100%;
+	margin-top:1px;
+	text-shadow: 2px 2px 8px 3.0 #333333b0;
+	vertical-align:center;
+	text-align:center;
+	border: 1px solid #ffc575;
+	border-radius: 100%;
+	background-color: #272729;
+}
+.BuyControl{
+	vertical-align:center;
+	horizontal-align:center;
+	width:400px;
+	height:264px;
+	margin-bottom:250px;
+}
+.acceptButton{
+	height:30px;
+	width:100px;
+	margin-top:220px;
+	margin-left:50px;
+}
+.cancelButton{
+	height:30px;
+	width:100px;
+	margin-top:220px;
+	horizontal-align:right;
+	margin-right:50px;
+}
+.BuyControlButtonText{
+	text-align:center;
+	width:100%;
+	vertical-align:center;
+	color:white;
+	font-size:20px;
+	text-shadow: 2px 2px 8px 3.0 #333333b0;
+}
+.BuyControlTextPanel{
+	width:100%;
+	margin-top:20px;
+	flow-children:down;
+}
+#BuyControlTextLine1{
+	color: white;
+	width:100%;
+	text-align:center;
+	font-size:25px;
+	margin-top: 2px;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px 3.0 #333333b0;
+}
+#accept_shadow{
+	width: 100%;
+	height: 650px;
+	margin-top: 39px;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+}
+#BuyControlTextLine2{
+	color: white;
+	margin-top: 25px;
+	width:100%;
+	text-align:center;
+	font-size:23px;
+	margin-top: 140px;
+	text-shadow: 2px 2px 8px 3.0 #333333b0;
+}
+#BuyControlTextLine3{
+	color: #C48733;
+	text-align:center;
+	font-size:25px;
+	width:100%;
+	text-align:center;
+	margin-top: 170px;
+	text-shadow: 2px 2px 8px 3.0 #333333b0;
+}
+#BuyControlTextLine3_pan{
+	horizontal-align:center;
+	flow-children:right;
+	margin-top: 20px;
+}
+#BuyControlDropPanel{ 
+	margin-bottom: 125px;
+	vertical-align: bottom;
+}
+#BuyControlDrop,#BuyControlDropPanel{
+	width: 100px;
+	horizontal-align:center;
+}
+.BuyControlTextLine2{
+	font-size:21px;
+	margin-top:50%;
+	width:100%;
+	text-align:center;
+	color:#ca2f2f;
+}
+.DonateShopItemButtonGived{
+	width:160px;
+	height:30px;
+	margin-left:10px;
+	vertical-align:bottom;
+	margin-bottom:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/set2.png');
+	box-shadow: #00000080 2px 2px 4px 0px;	
+}
+
+.DonateShopItemButtonGived:hover
+{
+	width:161px;
+	height:31px;
+	brightness: 1.8;
+}
+/* --------------------------------------------------------------------- */
+
+.DonateShopItemButtonActive{
+	width:160px;
+	height:30px;
+	margin-left:10px;
+	vertical-align:bottom;
+	margin-bottom:10px;
+	background-image:url('file://{resources}/images/custom_game/DonateShop/set2.png');
+	box-shadow: #00000080 2px 2px 4px 0px;	
+}
+
+.DonateShopItemButtonActive:hover
+{
+	width:161px;
+	height:31px;
+	brightness: 1.8;
+}
+
+.DonateShopItemButtonLabelActive{
+	color:#A2712F;
+	text-shadow: 1px 1px 4px 3.0 #222222;
+	font-size:18px;
+	font-weight: bold;
+	width:100%;
+	vertical-align:center;
+	text-align:center;
+}
+
+/* --------------------------------------------------------------------- */
+.DonateShopItemButtonLabelGived{
+	color:#A2712F;
+	text-shadow: 1px 1px 4px 3.0 #222222;
+	font-size:18px;
+	font-weight: bold;
+	width:100%;
+	vertical-align:center;
+	text-align:center;
+}
+.RatingCloseButtonIcon{
+	vertical-align:center;
+	margin-right:5px;
+	width:20px;
+	height:20px;
+}
+
+#RatingCloseButton:active
+{
+	sound: "ui_custom_lobby_dialog_slide";
+}
+#openShop:active{
+	sound: "ui_chat_slide_in";
+}
+.openShop:hover{
+	brightness: 1.8;
+}
+
+
+#acceptButton:active, #cancelButton:active{
+	sound: "ui_learn_mode_popup";
+}
+.DonateShopItemButtonGived:hover {
+	font-size:23px;
+}
+
+#shopButtonImgAndText1:hover  #shopButtonImgAndText2:hover #DonateShopItemButtonLabelNotAlign2{
+	color:#f5a23f;
+	font-size:21px;
+}
+.acceptButton:hover .controllButtonImg, .cancelButton:hover .controllButtonImg{
+	brightness: 1.5;
+}
+
+.open_shop{
+	animation-name: open_shop;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+}
+@keyframes 'open_shop'
+{
+	from{
+		opacity:0;
+		transform: translate3d(0px, -700px, 0px);
+		pre-transform-scale2d: 0.1;
+		
+	}
+	
+	to{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+		pre-transform-scale2d: 1;
+	}
+}
+.close_shop{
+	animation-name: close_shop;
+	animation-duration: .2s;
+	animation-timing-function: linear;
+	
+}
+@keyframes 'close_shop'
+{
+	from{
+		opacity:1;
+		transform: translate3d(0px, 0px, 0px);
+		pre-transform-scale2d: 1;
+	}
+	
+	to{
+		opacity: 0;
+		transform: translate3d(0px, -700px, 0px);
+		pre-transform-scale2d: 0.1;
+	}
+}
+
+.shop_selection_panel{
+	width: 80%;
+	height: 100px;
+	margin-top: 40px;
+	z-index: 1;
+	//background-color: red;
+	horizontal-align: center;
+}
+
+/* good */
+#discord{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 45px;
+	border:1px solid black;
+	vertical-align: top;
+	horizontal-align: right;
+	margin-top:20px;
+	margin-right:120px;
+	z-index:9999999;
+}
+#discord:hover{
+	brightness: 2.0;
+}
+#patreon{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 45px;
+	border:1px solid black;
+	vertical-align: top;
+	horizontal-align: right;
+	margin-top:20px;
+	margin-right:50px;
+	z-index:9999999;
+}
+
+#patreon:hover{
+	brightness: 2.0;
+}
+
+#dpay{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 45px;
+	border:1px solid black;
+	vertical-align: top;
+	horizontal-align: right;
+	margin-top:20px;
+	margin-right:190px;
+	z-index:9999999;
+}
+#dpay:hover{
+	brightness: 2.0;
+}
+
+
+.ScrollThumb {
+visibility: collapse;
+}
+
+#UpgradePet{
+	horizontal-align: right;
+	margin-top:88px;
+	margin-right:13px;
+	width: 41px;
+	height: 41px;
+	background-image: url('file://{resources}/images/custom_game/DonateShop/up.png');
+	transition: transform 0.2s ease-in-out 0.0s;
+	transform: scale3d(1.0,1.0,1.0);		
+	//background-color: red;
+}
+
+#UpgradePet:hover
+{
+	transform: scale3d(1.3,1.3,1.2);
+	sound: "ui_select_arrow";
+}
+
+#levelpets{
+	horizontal-align: left;
+	margin-top:105px;
+	margin-left:15px;
+	width: 115px;
+	height: 20px;
+}
+
+.UpgradePetText{
+	font-size:20px;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: left;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+	vertical-align:bottom;
+	horizontal-align:left;
+}
+
+/* ============================================================== */
+
+.loot{
+	height:100%;
+	width:100%;
+	
+}
+
+#lootbox{
+	flow-children: right;
+	height:500px;
+	width:1550px;
+//	background-color:red;
+	vertical-align:center;
+	horizontal-align:center;
+}
+
+#slot1, #slot2, #slot3, #slot4, #slot5{
+	margin-top:20px;
+	background-color:green;
+	height:350px;
+	width:250px;
+	margin-left: 50px;
+	box-shadow:10px 10px 10px 5.0 #000000b0;
+	border: 3px solid #403004;
+	background-color:#1c1c1c;
+	transition: transform 0.2s ease-in-out 0.0s;
+	transform: scale3d(1,1,1);	
+}
+
+#loot1:hover, #loot2:hover, #loot3:hover, #loot4:hover, #loot5:hover, #button:hover
+{
+	transform: scale3d(1.1,1.1,1.1);
+	sound: "ui_select_arrow";
+	border: 3px solid #9e7606;
+}
+
+#loot1, #loot2, #loot3, #loot4, #loot5{
+	height:200px;
+	width:200px;
+	horizontal-align:center;
+	margin-top: 25px;
+	border: 3px solid #705403;
+	background-color:#1c1c1c;
+}
+
+#lootimg1, #lootimg2, #lootimg3, #lootimg4, #lootimg5{
+	height:200px;
+	width:200px;
+	horizontal-align:center;
+	margin-top: 25px;
+	border: 3px solid #705403;
+	background-color:#1c1c1c;
+}
+
+#loottext1, #loottext2, #loottext3, #loottext4, #loottext5{
+	vertical-align: bottom;
+	horizontal-align:center;
+	margin-bottom:50px;
+    font-size: 20px;
+    color: #c8c8c8;
+    text-shadow: 2px 2px 3px 3.0 #000000b0;	
+	font-weight: bold;
+}
+
+#button{
+
+	vertical-align:bottom;
+	horizontal-align:center;
+	margin-bottom: 320px;
+	width:212px;
+	height:41px;
+	background-image:url('file://{resources}/images/custom_game/accept.png');
+	box-shadow: #00000080 2px 2px 4px 0px;
+}
+
+#close_box{
+	vertical-align:center;
+	horizontal-align:center;	
+}
+
+#close_box1{
+    font-size: 25px;
+    color: #c8c8c8;
+    text-shadow: 2px 2px 3px 3.0 #000000b0;	
+	font-weight: bold;	
+	horizontal-align:center;
+	text-align:center;
+}
+

@@ -1,0 +1,241 @@
+.SpellsMenuRoot{
+	width: 100%;
+	height: 100%;
+}
+
+.SpellsMenuSwap{
+	width: 100%;
+	height: 30%;
+	vertical-align: center;
+}
+
+.SpellsMenuPrecache{
+	visibility: collapse;
+}
+
+#SpellsMenuContents,#SpellsMenuOpen{
+	visibility: collapse;
+}
+
+#SpellsMenuContents.Visible,#SpellsMenuOpen.Visible{
+	visibility: visible;
+}
+
+#SpellsMenuContents{
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	/* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+
+#SpellsMenuOpen{
+	z-index: 15;
+	height: 100%;
+	width: 100%;
+}
+
+#SpellsMenuCloseButton{
+	align: right bottom;
+	margin-right: 2px;
+	margin-bottom: 11px;
+	z-index: 15;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#SpellsMenuOpenButton{
+	align: right bottom;
+    margin-bottom: 5px;
+    margin-right: 75px;
+	height: 50px;
+    width: 60px;
+	background-image: url("file://{images}/custom_game/spell_shop.png");
+	background-size: cover;
+}
+
+.but_text{
+	align: right bottom;
+    margin-bottom: 5px;
+    margin-right: 5px;
+	height: 50px;
+    width: 60px;
+	font-size: 36px;
+}
+
+#SpellsMenuOpenButton:hover{
+	transform: scale3d(1.2,1.2,1.2);		
+	/* background-color: rgb(255, 255, 255); */
+}
+
+
+#SpellSwapButton{
+	height: 24px;
+	width: 200px;
+	background-image: url("file://{images}/custom_game/button.png");
+	background-size: cover;
+	font-size: 10px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-left:400px;
+	margin-bottom: 145px;
+	height: 30px;
+}
+
+#SpellsMenuSwapSpellsButton{
+	/* align:center; */
+	text-align:center;
+	padding: 5px 54px 5px 50px;
+	font-size: 16px;
+	/* font-weight: bold; */
+}
+#SpellsMenuSwapSpellsButton:hover{
+	transform: scale3d(1.1,1.1,1.1);
+	sound: "ui_select_arrow";
+}
+
+//////////////////////////////////////////////////////
+
+#HeroImage{
+	width: 96px;
+	height: 54px;
+	z-index: 2;
+}
+ 
+#SpellsMenuImagesBlockTop{
+	margin-top:12.5%;
+	width: 8%;
+	height: 4%;
+	horizontal-align:center;
+	background-image: url("file://{images}/spell_menu/top.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#SpellsMenuImagesBlock{
+	flow-children: right-wrap;
+	width: 90%;
+	height: 75%;
+	horizontal-align:center;
+	vertical-align:center;
+	background-image: url("file://{images}/spell_menu/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.SpellsMenuHeroesContents{
+	width: 48%;
+	flow-children: right-wrap;
+	vertical-align: top;
+	height: fit-children;
+	margin-top: 7%;
+	margin-left: 1%;
+}
+
+#SpellsMenuSpellsBlock{
+	margin-top: 68%;
+	horizontal-align:center;
+	flow-children: right;
+}
+
+#SpellsMenuCardIdPoints{
+	horizontal-align:center;
+	vertical-align:center;
+	font-size: 28px;
+	font-weight: bold;
+	color: #cb7a42;//#ffa600;
+}
+
+.HeroPanel{
+	width: 96px;
+	height: 54px;
+	margin: 2px;
+	border: 1px solid darkgray;
+}
+
+.HeroPanel:hover{
+	border: 1px solid #ffa600;
+	sound: "ui_select_arrow";
+	z-index:99;
+}
+
+#SpellsMenuSpellsBlockSwap{
+	horizontal-align:center;
+	vertical-align: center;
+	flow-children: right;
+	background-image: url("file://{images}/spell_menu/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 10px;
+}
+
+.SingleSpellPanel{
+	width: 170px;
+	height: 170px;
+	background-image: url("file://{images}/spell_menu/skill.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin:5px;
+	flow-children:down;
+}
+
+.SingleSpellPanelSwap{
+	width: 170px;
+	height: 152px;
+	background-image: url("file://{images}/spell_menu/skill_swap.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin:5px;
+	flow-children:down;
+}
+
+#SingleSpellPanelButton{
+	horizontal-align:center;
+	margin-top:12px;
+	width: 128px;
+	height: 128px;
+}
+
+.CpCostIndicator{
+	width: 128px;
+	text-align:center;
+	align: center center;
+	color: #00f5ff;
+	background-image: url("file://{images}/spell_menu/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#SpellsMenuDescription{
+	margin-left: 6%;
+	margin-top: 69%;
+	width: 322px;
+	height: 162px;
+	background-image: url("file://{images}/spell_menu/description.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color:#1c1f23;
+	flow-children: down;
+}
+
+.SpellsMenuDescriptionLabel{
+	margin-left:10px;
+	margin-top:5px;
+	font-size: 20px;
+}
+
+#SpellsMenuCloseButton{
+	background-image: url("file://{images}/spell_menu/button.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.button_text{
+	padding: 5px;
+	color: #cb7a42;
+	font-size: 20px;
+	/* font-weight: bold; */
+}

@@ -1,0 +1,43 @@
+<root>
+	<Panel class = "RatingPlayerInfo">
+		<Image src="file://{resources}/images/custom_game/reset.png"/>
+		<!-- <Image src="file://{resources}/images/custom_game/effects/2.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/3.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/4.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/5.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/6.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/7.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/8.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/9.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/10.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/11.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/12.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/13.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/14.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/15.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/16.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/17.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/18.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/treasure2.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/green.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/red.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/blue.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_agh.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_grass.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_blue.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_dark.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_green.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/effects/em_viol.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/amaterasu.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/basim.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/butch.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/dog.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/fox.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/greevil.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/luna.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/panda.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/ram.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/sky.png"/> -->
+		<!-- <Image src="file://{resources}/images/custom_game/pets/wyrm.png"/> -->
+	</Panel>
+</root>

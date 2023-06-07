@@ -1,0 +1,16 @@
+.Hidden
+{
+	visibility: collapse;
+}
+
+.load
+{
+	horizontal-align: middle;
+	vertical-align: center;
+}
+
+#screen
+{
+	width: 100%;
+	height: 100%;
+}

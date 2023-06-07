@@ -1,0 +1,457 @@
+.page_container{
+ width: fill-parent-flow( 1.0 );
+ height: fill-parent-flow( 1.0 );
+}
+
+.content_container{
+ width: 100%;
+ height: 100%;
+ background-image: url("s2r://panorama/images/custom_game/ui/endscreen_page_bg_png.vtex");
+ background-repeat: no-repeat;
+ background-size: 100%;
+ flow-children:down;
+ transition-property:opacity,transform;
+transition-duration:1s;
+ transform: scale3d( 0.01, 0.01, 0.01);
+ transition-timing-function: linear;
+ opacity: 0;
+}
+.winner_team{
+ width: 1632px;
+ height: 122px;
+ horizontal-align:center;
+ margin-top: 30px;
+ background-image: url("s2r://panorama/images/custom_game/ui/endscreen_victory_title_png.vtex");
+ background-repeat: no-repeat;
+}
+.winner_team_label{
+ horizontal-align:center;
+ vertical-align: center;
+ color: white;
+ text-shadow: 2px 2px 8px 1.0 green;
+ font-size: 80px;
+ font-weight: bold;
+ margin-top: -30px;
+}
+.root{
+ width: 100%;
+ height: 1050px;
+ vertical-align: middle;
+ horizontal-align:center;
+ margin-top: -30px;
+ margin-left: 120px;
+ margin-right: 120px;
+ flow-children:right;
+}
+.player_info_board{
+ width: 300px;
+ height: 100%;
+ background-color: #1E201F;
+ flow-children: down;
+ //background-color:red;
+}
+/* -------------- */
+.player_team_container{
+ flow-children: down;
+ width: 100%;
+ height: 25%;  
+// background-color:red;
+}
+/* -------------- */
+
+.team_info{
+ width: 100%;
+ flow-children: right;
+ margin-top: 2px;
+ margin-left: 22px;
+ //background-color:blue;
+}
+.radiant_team_score{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FCFF0047;
+ font-size: 36px;
+ vertical-align: bottom;
+}
+.radiant_team_name{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FCFF0047;
+ font-size: 28px;
+ margin-left: 8px;
+ vertical-align: bottom;
+}
+.dire_team_score{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 36px;
+ vertical-align: bottom;
+}
+.dire_team_name{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 28px;
+ margin-left: 8px;
+ vertical-align: bottom;
+}
+
+/* ----------------------------- */
+.team1_team_score{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 36px;
+ vertical-align: bottom;
+}
+.team1_team_name{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 28px;
+ margin-left: 8px;
+ vertical-align: bottom;
+}
+
+.team2_team_score{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 36px;
+ vertical-align: bottom;
+}
+.team2_team_name{
+ color: #ffffff;
+ text-shadow: 1px 1px 6px 1.1 #FF4E0047;
+ font-size: 28px;
+ margin-left: 8px;
+ vertical-align: bottom;
+}
+/* ----------------------------- */
+
+
+.player_title{
+ font-size: 16px;
+ color: #7c7c7c;
+ margin-top: 6px;
+ margin-left: 20px;
+}
+.player_details_container{
+ width: 100%;
+ height: fill-parent-flow( 1 );
+ flow-children:down;
+ 
+}
+.player_detail_row{
+	width: 280px;
+	height: 54px;
+	flow-children: right;
+	margin-left: 18px;
+	margin-top: 4px;
+	background-image:url('file://{resources}/images/custom_game/back_player.png');
+	
+}
+
+.avatar_img{
+ width: 42px;
+ height: 42px;
+ margin-left: 10px;
+ margin-right:8px;
+ vertical-align: center;
+}
+.hero_img{
+ width: 80px;
+ height: 42px;
+ vertical-align: center;
+}
+
+.player_info_names{
+ width: fill-parent-flow(1);
+ height: 100%;
+ flow-children:down;
+ margin-left: 6px;
+ vertical-align: center;
+ margin-right: 6px;
+}
+.player_steamID{
+	height: 22px;
+	font-size: 20px;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	margin-top: 4px;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+.player_heroname{
+	margin-top:2px;
+	font-size:18px;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+.player_sorceboard_container{
+
+ width: fill-parent-flow(1);
+ height: 100%;
+ background-color: #00000060;
+}
+
+.player_sorceboard_page{
+
+ height: 100%;
+ overflow: scroll squish;
+ flow-children: down;
+}
+.player_sorceboard_page #HorizontalScrollBar{
+ width: 100%;
+ height: 6px;
+ vertical-align: bottom;
+ layout-position:fixed;
+
+ visibility: visible;
+}
+.player_sorceboard_page #HorizontalScrollBar #ScrollThumb{
+ background-color: #3c3c3e;
+ border: 1px solid #000000d7;
+ border-radius: 2px;
+ box-shadow: 0px 1px 6px 0px #000000aa;
+}
+.main_sorceboard{
+ height: 25%;
+ flow-children: down;
+}
+.sub_header_container{
+ height: 36px;
+ flow-children: right;
+ margin-top: 30px;
+}
+.sub_header_kda{
+ margin-left: 16px;
+}
+.sub_header_items{
+	margin-left: 166px;
+}
+.sub_header_gold{
+	margin-left: 150px;
+}
+
+#sub_header_items{
+	width:130px;
+}
+
+#sub_header_gold, #sub_header_damage, #sub_header_tank, #sub_header_heal, #sub_header_get_exp, #sub_header_rank
+{
+	width:140px;
+}
+
+#player_info_gold_text, #player_info_damage_text, #player_info_damageTaken_text, #player_info_heal_text, #player_info_rank_text, #player_info_get_exp_text
+{
+	width:140px;
+}
+
+.sub_header{
+	width: 66px;
+	vertical-align: bottom;
+	font-size: 16px;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+.team_scoreboard{
+	flow-children:down;
+}
+.team_scoreboard_row{
+	flow-children:right;
+	height: 54px;
+	margin-top: 4px;
+	background-image:url('file://{resources}/images/custom_game/back_player.png');
+}
+.player_info_kda_label{
+	width: 60px;
+	height: 16px;
+	font-size: 16px;
+	vertical-align: middle;
+	margin-left: 16px;
+ 	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+.player_items_container{
+ width: 420px;
+ height: 44px;
+ vertical-align: middle;
+ margin-left: 10px;
+}
+.player_inventory_items_root{
+ flow-children:right;
+ width: 100%;
+ height: 100%;
+}
+.player_item{
+ width: 60px;
+ height: 100%;
+ background-color: gradient( linear, 0% 0%, 0% 100%, from(#3f171a00 ), to( #0c0d0dFF ) );
+ vertical-align: middle;
+ border: 1px solid #000000;
+}
+.player_item_img{
+ width: 50px;
+ height: 42px;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.player_neutral_item_img{
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
+ background-color: #000000FF;
+ opacity: .6;
+ horizontal-align:center;
+}
+
+.player_info_gold_label{
+	width: 66px;
+	vertical-align: center;
+	font-size: 16px;
+	margin-left: 18px;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+.player_info_damage_label, .player_info_damageTaken_label, .player_info_heal_label,.player_rank_info_label,.player_get_exp_info_label
+{
+	width: 60px;
+	height: 20px;
+	font-size: 18px;
+	vertical-align: middle;
+	color:#d9d8d7;
+	font-weight: bold;
+	text-align: center;	
+	text-shadow: 1px 1px 4px 3.0 #222222;
+}
+
+.player_info_rank{
+ height: 100%;
+ width: 138px;
+ flow-children: right;
+ margin-left: 16px;
+}
+
+.player_rank_info_icon_label{
+	 font-size: 12px;
+	 color: #ffffff;
+	 font-weight: bold;
+	 text-shadow: 0px 0px 4px #e99312;
+	 vertical-align: bottom;
+	 text-align: center;
+	 horizontal-align:center;
+}
+
+.player_info_get_exp{
+ height: 100%;
+ width: 100px;
+ margin-left: 28px;
+}
+
+
+
+.honor_player{
+ width: 100px;
+ height: 100%;
+ font-size: 16;
+ color: rgb(215, 252, 9);
+}
+
+
+.player_badge{
+ width: fit-children(1);
+ height: 100%;
+ margin-left: 2px;
+ margin-right: 4px;
+}
+
+.badge_mvp{
+ color: gold;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.badge_svp{
+ color: sandybrown;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.badge_damage_machine{
+ color: red;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.badge_healer{
+ color: green;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.badge_tanker{
+ color: yellowgreen;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+
+.badge_gold_lover{
+ color: yellow;
+ font-size: 18px;
+ font-weight: bold;
+ vertical-align: center;
+ horizontal-align:center;
+}
+.player_info_badge{
+ height: 100%;
+
+ margin-left: 46px;
+ flow-children:right;
+}
+.finish_container{
+ width: 100%;
+ height: 100%;
+ /* background-image: url("s2r://panorama/images/custom_game/ui/endscreen_endgame_btn_png.vtex"); */
+ /* background-repeat: no-repeat; */
+background-color:red;
+}
+.end_btn{
+	width:200px;
+	height: 50px;
+	horizontal-align:right;
+	margin-top:20px;
+	background-color: #3c3c3e;
+	border: 1px solid #000000d7;
+	border-radius: 2px;
+	box-shadow: 0px 1px 6px 0px #000000aa;
+}
+
+#GameEnd{
+visibility: collapse;
+}
+
+
+.end_btn_label{
+
+ font-size: 25px;
+ color: #18E6D0;
+ vertical-align: center;
+ horizontal-align:center;
+  color: white;
+ text-shadow: 2px 2px 8px 1.0 black;
+ font-weight: bold;
+}
+.finish_container:hover{
+ box-shadow: rgb(97, 88, 81) 0px 0px 2px 0px;
+}

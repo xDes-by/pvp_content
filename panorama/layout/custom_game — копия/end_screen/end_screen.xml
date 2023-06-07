@@ -1,0 +1,171 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/end_screen/end_screen.css" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/end_screen/end_screen.js" />
+	</scripts>
+	<snippets>
+		<snippet name="playerDetails">
+			<Panel class="player_detail_row">
+				<DOTAAvatarImage id="AvatarImage" class="avatar_img" />
+				<DOTAHeroImage id="HeroImage" class="hero_img" heroname="" />
+				<Panel class="player_info_names">
+					<DOTAUserName id="player_steamID_text" class="player_steamID" steamid="" />
+					<Label id="player_heroname_text" class="player_heroname" text="" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="teamSorceBoard">
+			<Panel class="team_scoreboard_row">
+				<Label id="player_info_kda_text" class="player_info_kda_label" text="" />
+				<Panel id="player_items_container" class="player_items_container" />
+				<Label id="player_info_gold_text" class="player_info_gold_label" text="" />
+				<Label id="player_info_damage_text" class="player_info_damage_label" text="" />
+				<Label id="player_info_damageTaken_text" class="player_info_damageTaken_label" text="" />
+				<Label id="player_info_heal_text" class="player_info_heal_label" text="" />
+				<Label id="player_info_rank_text" class="player_rank_info_label" text="" />
+				<Label id="player_info_get_exp_text" class="player_get_exp_info_label" text="" />
+			</Panel>
+		</snippet>
+		<snippet name="playerItems">
+			<Panel class="player_inventory_items_root">
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage0" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage1" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage2" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage3" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage4" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_item_img" id="ItemImage5" itemname="" />
+				</Panel>
+				<Panel class="player_item">
+					<DOTAItemImage class="player_neutral_item_img" id="ItemImage6" itemname="" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+			
+	<Panel class="page_container">
+		<Panel id="endscreen_container" class="content_container">
+			<Panel class="winner_team">
+				<Label id="winner_team_text" class="winner_team_label" text="" />
+				
+				<Button id="end_btn" class="end_btn">
+					<Label text="#EndGameButtonLabel" class="end_btn_label" onactivate="Game.FinishGame();" />
+				</Button>
+				
+			</Panel>
+			<Panel class="root">
+				<Panel class="player_info_board">
+			
+					<Panel id = "player_team_container1" class="player_team_container">
+						<Panel class="team_info">
+							<Label id="radiant_team_score" class="radiant_team_score" text="" />
+							<Label class="radiant_team_name" text="#goodguys" />
+						</Panel>
+						<Label class="player_title" text="#scoreboard_player" />
+						<Panel id="radiant_player_details" class="player_details_container" />
+					</Panel>
+				
+					<Panel id = "player_team_container2" class="player_team_container">
+						<Panel class="team_info">
+							<Label id="dire_team_score" class="dire_team_score" text="" />
+							<Label class="dire_team_name" text="#badguys" />
+						</Panel>
+						<Label class="player_title" text="#scoreboard_player" />
+						<Panel id="dire_player_details" class="player_details_container" />
+					</Panel>
+					
+					<Panel id = "player_team_container3" class="player_team_container">
+						<Panel class="team_info">
+							<Label id="team1_team_score" class="team1_team_score" text="" />
+							<Label class="team1_team_name" text="#team1" />
+						</Panel>
+						<Label class="player_title" text="#scoreboard_player" />
+						<Panel id="team1_player_details" class="player_details_container" />
+					</Panel>
+				
+					<Panel id = "player_team_container4" class="player_team_container">
+						<Panel class="team_info">
+							<Label id="team2_team_score" class="team2_team_score" text="" />
+							<Label class="team2_team_name" text="#team2" />
+						</Panel>
+						<Label class="player_title" text="#scoreboard_player" />
+						<Panel id="team2_player_details" class="player_details_container" />
+					</Panel>
+					
+				</Panel>
+					
+				<Panel class="player_sorceboard_container">
+					<Panel class="player_sorceboard_page">
+						<Panel id="main_sorceboard1" class="main_sorceboard">
+							<Panel class="sub_header_container">
+								<Label class="sub_header sub_header_kda" text="K/D/A" />
+								<Label id="sub_header_items" class="sub_header sub_header_items" text="#items" />
+								<Label id="sub_header_gold" class="sub_header sub_header_gold" text="#gold" />
+								<Label id="sub_header_damage" class="sub_header sub_header_damage" text="#damage" />
+								<Label id="sub_header_tank" class="sub_header sub_header_tank" text="#damage_taken" />
+								<Label id="sub_header_heal" class="sub_header sub_header_heal" text="#heal" />
+								<Label id="sub_header_rank" class="sub_header sub_header_rank" text="#rank" />
+								<Label id="sub_header_get_exp" class="sub_header sub_header_get_exp" text="#get_exp" />
+							</Panel>
+							<Panel id="radiant_team_scoreboard" class="team_scoreboard" />
+						</Panel>
+						
+						<Panel id="main_sorceboard2" class="main_sorceboard">
+							<Panel class="sub_header_container">
+								<Label class="sub_header sub_header_kda" text="K/D/A" />
+								<Label id="sub_header_items" class="sub_header sub_header_items" text="#items" />
+								<Label id="sub_header_gold" class="sub_header sub_header_gold" text="#gold" />
+								<Label id="sub_header_damage" class="sub_header sub_header_damage" text="#damage" />
+								<Label id="sub_header_tank" class="sub_header sub_header_tank" text="#damage_taken" />
+								<Label id="sub_header_heal" class="sub_header sub_header_heal" text="#heal" />
+								<Label id="sub_header_rank" class="sub_header sub_header_rank" text="#rank" />
+								<Label id="sub_header_get_exp" class="sub_header sub_header_get_exp" text="#get_exp" />
+							</Panel>
+							<Panel id="dire_team_scoreboard" class="team_scoreboard" />
+						</Panel>
+					
+					<Panel id="main_sorceboard3" class="main_sorceboard">
+							<Panel class="sub_header_container">
+								<Label class="sub_header sub_header_kda" text="K/D/A" />
+								<Label id="sub_header_items" class="sub_header sub_header_items" text="#items" />
+								<Label id="sub_header_gold" class="sub_header sub_header_gold" text="#gold" />
+								<Label id="sub_header_damage" class="sub_header sub_header_damage" text="#damage" />
+								<Label id="sub_header_tank" class="sub_header sub_header_tank" text="#damage_taken" />
+								<Label id="sub_header_heal" class="sub_header sub_header_heal" text="#heal" />
+								<Label id="sub_header_rank" class="sub_header sub_header_rank" text="#rank" />
+								<Label id="sub_header_get_exp" class="sub_header sub_header_get_exp" text="#get_exp" />
+							</Panel>
+							<Panel id="team1_team_scoreboard" class="team_scoreboard" />
+						</Panel>
+					
+					<Panel id="main_sorceboard4" class="main_sorceboard">
+							<Panel class="sub_header_container">
+								<Label class="sub_header sub_header_kda" text="K/D/A" />
+								<Label id="sub_header_items" class="sub_header sub_header_items" text="#items" />
+								<Label id="sub_header_gold" class="sub_header sub_header_gold" text="#gold" />
+								<Label id="sub_header_damage" class="sub_header sub_header_damage" text="#damage" />
+								<Label id="sub_header_tank" class="sub_header sub_header_tank" text="#damage_taken" />
+								<Label id="sub_header_heal" class="sub_header sub_header_heal" text="#heal" />
+								<Label id="sub_header_rank" class="sub_header sub_header_rank" text="#rank" />
+								<Label id="sub_header_get_exp" class="sub_header sub_header_get_exp" text="#get_exp" />
+							</Panel>
+							<Panel id="team2_team_scoreboard" class="team_scoreboard" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

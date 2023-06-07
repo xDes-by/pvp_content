@@ -1,0 +1,35 @@
+<root>
+	<script>
+		GameEvents.Subscribe("CreateIngameErrorMessage", function(data) 
+		{
+			GameEvents.SendEventClientSide("dota_hud_error_message", 
+			{
+				"splitscreenplayer": 0,
+				"reason": data.reason || 80,
+				"message": data.message
+			})
+		})
+	</script>
+
+  <Panel>
+	<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/common/cosmetic_abilities.xml" />
+	<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/boss_shop/shop.xml" />
+
+	
+	<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />  <!-- удалить потом нахуй -->
+	
+	<CustomUIElement type="EndScreen" layoutfile="s2r://panorama/layout/custom_game/end_screen/end_screen.xml" />
+	<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/tooltip_extender/tooltip_extender.xml" /> 
+	<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/spell_shop/spell_shop.xml" />
+	<CustomUIElement type="HeroSelection" layoutfile="s2r://panorama/layout/custom_game/pick/pick.xml" />
+	
+	
+	
+	
+	
+	<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/creep_menu/creep_menu.xml" />
+	
+	
+	<!-- <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/uploadimg.xml"/> -->
+  </Panel>
+</root>

@@ -1,0 +1,69 @@
+<root>
+	<styles>
+    	<include src="file://{resources}/layout/custom_game/creep_menu/creep_menu.css" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/creep_menu/creep_menu.js" /> 
+	</scripts>
+
+	<Panel class="CREEP_MENU_ROOT" hittest="false">
+		<Panel id="CreepsOpenButton" onmouseactivate="OpenInv()" hittest="true"/> 
+		
+		<Panel class='CreepsMenu' id='CreepsMenu'>
+			<Panel class="equipmentItem" id="melee" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label text="#Melee" />
+					<Label text="#weapon_set" />
+				</Panel>
+			</Panel>
+			
+			<Panel class="equipmentItem" id="range" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label class="text" text="#Ranged" />
+					<Label class="text" text="#weapon_set" />
+				</Panel>
+			</Panel>
+			
+			<Panel class="equipmentItem" id="ursa" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label text="#weapon_set" />
+					<Label text="#weapon_set" />
+				</Panel>
+			</Panel>
+			
+			<Panel class="equipmentItem" id="centaur" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label text="#weapon_set" />
+					<Label text="#weapon_set" />
+				</Panel>
+			</Panel>
+			
+			<Panel class="equipmentItem" id="ogre" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label text="#weapon_set" />
+					<Label text="#weapon_set" />
+				</Panel>
+			</Panel>
+			
+			<Panel class="equipmentItem" id="satyr" >
+				<Image class = "creep_image"/>
+				<Image class = "creep_image_back"/>
+				<Panel class = "creep_description_panel">
+					<Label text="#weapon_set" />
+					<Label text="#weapon_set" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,31 @@
+.loot{
+	height:100%;
+	width:100%;
+	
+}
+
+#lootbox{
+	flow-children: right;
+	height:500px;
+	width:1550px;
+	background-color:red;
+	vertical-align:center;
+	horizontal-align:center;
+}
+
+#loot1, #loot2, #loot3, #loot4, #loot5{
+	margin-top:20px;
+	background-color:green;
+	height:350px;
+	width:250px;
+	margin-left: 50px;
+}
+
+#button{
+	height:50px;
+	width:250px;
+	background-color: blue;
+	vertical-align:bottom;
+	horizontal-align:center;
+	margin-bottom: 320px;
+}
