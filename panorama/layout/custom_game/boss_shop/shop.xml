@@ -1,132 +1,63 @@
-<root> 
-    <styles>
-        <include src="file://{resources}/layout/custom_game/boss_shop/shop.css" />
-        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
-    </styles>
-
-    <scripts>
-        <include src="file://{resources}/layout/custom_game/boss_shop/shop.js" />
-    </scripts>
-
-    <Panel class="root" hittest="false" style="width: 100%; height: 100%;">
-	
-		<Panel id="loot" hittest="false" style="width: 100%; height: 100%;">			
-			<Panel id = "lootbox">
-			
-				<Panel id = "slot1">
-					<DOTAItemImage id='loot1' class="loot1" hittest="true" itemname="">	
-					</DOTAItemImage>
-					<Image id='lootimg1' class="lootimg1" src=""/>	
-					<Label class="loottext1" id="loottext1" text='0'/>
-				</Panel>
-				
-				<Panel id = "slot2">
-					<DOTAItemImage id='loot2' class="loot2" hittest="true" itemname="">
-					</DOTAItemImage>
-					<Image id='lootimg2' class="lootimg2" src=""/>
-					<Label class="loottext2" id="loottext2" text='0'/>
-				</Panel>
-				
-				<Panel id = "slot3">
-					<DOTAItemImage id='loot3' class="loot3" hittest="true" itemname="">
-					</DOTAItemImage>
-					<Image id='lootimg3' class="lootimg3" src=""/>
-					<Label class="loottext3" id="loottext3" text='0'/>
-				</Panel>
-				
-				<Panel id = "slot4">
-					<DOTAItemImage id='loot4' class="loot4" hittest="true" itemname="">
-					</DOTAItemImage>
-					<Image id='lootimg4' class="lootimg4" src=""/>
-					<Label class="loottext4" id="loottext4" text='0'/>
-				</Panel>
-				
-				<Panel id = "slot5">
-					<DOTAItemImage id='loot5' class="loot5" hittest="true" itemname="">
-					</DOTAItemImage>
-					<Image id='lootimg5' class="lootimg5" src=""/>
-					<Label class="loottext5" id="loottext5" text='0'/>
-				</Panel>
-				
-		
-			</Panel>
-				<Panel id = "button">
-					<Button id = "close_box" onmouseactivate="Close()">
-					<Label class="close_box1" id="close_box1" text="#Close" />
-				</Button>
-			</Panel>
-		</Panel>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-        <Panel id = "donateShop" class = "donateShop" hittest = "false">
-			<Image class="openShop" id="openShop" src="file://{resources}/images/custom_game/shop.png" onmouseactivate="openShopButton()"  onmouseover="TipsOver('shop','openShop')" onmouseout="TipsOut()"/>
-			<Panel id="openShopPanelLabel" class="openShopPanelLabel" hittest = 'false'>
-			</Panel>
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/boss_shop/shop.css" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/boss_shop/shop.js" />
+	</scripts>
+	<Panel class="root" hittest="false" style="width: 100%; height: 100%;">
+		<Panel id="donateShop" class="donateShop" hittest="false">
+			<Panel id="OpenShopButton" onmouseactivate="openShopButton()" onmouseover="TipsOver('shop','OpenShopButton')" onmouseout="TipsOut()"> </Panel>
 			<Panel class="DonateShopPanel" id="DonateShopPanel">
-			
-						<Button id="discord" onactivate="DOTADisplayURL('https://discord.gg/SMGTpV3NUU');"  onmouseover="TipsOver('discord','discord')" onmouseout="TipsOut()">
-							<Image class="disc" src="file://{images}/custom_game/discord.png" />
-						</Button>		
-					
-						<Button id="patreon" onactivate="DOTADisplayURL('https://www.patreon.com/dotabattle');" onmouseover="TipsOver('patreon','patreon')" onmouseout="TipsOut()">  
-							<Image class="patr" src="file://{images}/custom_game/patreon.png" />
-						</Button>		
-						
-						<Button id="dpay" onactivate="DOTADisplayURL('https://zombie-defence.ru/public/other/donate.php');" onmouseover="TipsOver('dpay','dpay')" onmouseout="TipsOut()">  
-							<Image class="dpay" src="file://{images}/custom_game/dpay.png" />
-						</Button>	
-			
-			
-				<Panel id="accept_shadow" hittest='false'/>
-						<Panel id="money_panel" class="money_panel">
-							<Panel class='DonateMoneyPanel' id='DonateMoneyPanel' onmouseover="TipsOver('gems','DonateMoneyPanel')" onmouseout="TipsOut()">
-								<Image class='DonateMoneyLogo3' id='DonateMoneyLogo' src="file://{resources}/images/custom_game/DonateShop/money_logo.png" onmouseover="TipsOver('gems','DonateMoneyPanel')" onmouseout="TipsOut()"/>
-								<Label class="DonateMoneyLabel" id="DonateMoneyLabel" text='0' onmouseover="TipsOver('gems','DonateMoneyPanel')" onmouseout="TipsOut()"/>
-						</Panel>
-						
-						<!-- <Panel class='MMMRPointsPanel' id='MMMRPointsPanel' onmouseover="TipsOver('mmrpoints','MMMRPointsPanel')" onmouseout="TipsOut()"> -->
-							<!-- <Image class='MMMRPointsLogo' id='MMMRPointsLogo' src="file://{resources}/images/custom_game/DonateShop/bonus_coins.png" onmouseover="TipsOver('mmrpoints','MMMRPointsPanel')" onmouseout="TipsOut()"/> -->
-							<!-- <Label class="DonateMoneyLabel" id="MMMRPointsLabel" text='0' onmouseover="TipsOver('mmrpoints','MMMRPointsPanel')" onmouseout="TipsOut()"/> -->
-						<!-- </Panel> -->
-					</Panel>	
-				<Panel id="shop_selection_panel" class="shop_selection_panel">
-					<Panel class="DonateShopTabsPanel" id="DonateShopTabsPanel"/>
-				</Panel>
-				<Panel id = "ShopCloseButton" class = "ShopCloseButton" onmouseactivate="closeShop()" onmouseover="TipsOver('close','ShopCloseButton')" onmouseout="TipsOut()">
-					<Image id="ShopCloseButtonIcon" class = "RatingCloseButtonIcon" src="file://{resources}/images/custom_game/closeIcon.png"/>
-				</Panel>
+				<Panel id="CloseShopButton" onmouseactivate="closeShop()" onmouseover="TipsOver('close','CloseShopButton')" onmouseout="TipsOut()"> </Panel>
 				
-				<Panel id = 'lowPanel' class='lowPanel'>
-                    <Panel class="DonateShopContentPanel_bg" id="DonateShopContentPanel_bg"/>
-					<Panel class="DonateShopContentPanel" id="DonateShopContentPanel">
+				<Panel id="PlayerInfoPanel">
+					<DOTAAvatarImage id="PlayerIcon" steamid="76561198146952643" />
+					<Panel id="PlayerStatisticContainer">
+						<DOTAUserName id="PlayerName" steamid="76561198146952643" />
+						<Panel id="PlayerStatisticContent" >
+							<Panel class="DonateMoneyPanel" id="DonateMoneyPanel" onmouseover="TipsOver('gems','DonateMoneyPanel')" onmouseout="TipsOut()">
+								<Image class="DonateMoneyLogo3" id="DonateMoneyLogo" src="s2r://panorama/images/custom_game/donateshop/money_logo_3.png" />
+								<Label class="DonateMoneyLabel" id="DonateMoneyLabel" text="0" />
+							</Panel>
+							<Panel class="MMMRPointsPanel" id="MMMRPointsPanel" onmouseover="TipsOver('mmrpoints','MMMRPointsPanel')" onmouseout="TipsOut()">
+								<Image class="MMMRPointsLogo" id="MMMRPointsLogo" src="s2r://panorama/images/custom_game/donateshop/protection.png" />
+								<Label class="DonateMoneyLabel" id="MMMRPointsLabel" text="0" />
+							</Panel>
+						</Panel>
 					</Panel>
 				</Panel>
-			</Panel>
-			<Panel class="BuyControl" id='BuyControl'>
-				<Image class='BuyControlCurDon' id='BuyControlCurDon' src="file://{resources}/images/custom_game/DonateShop/bg_gem.png" />
-				<Image class='BuyControlCurRp' id='BuyControlCurRp' src="file://{resources}/images/custom_game/DonateShop/bg_shid.png" />
-				<Label id = "BuyControlTextLine1" class = "BuyControlTextLine1" text='asd'/>
-				<Label id = "BuyControlTextLine2" class = "BuyControlTextLine1" text='asd'/>
-				<Label id = "BuyControlTextLine3" class = "BuyControlTextLine1" text='550'/>
-				<Panel class = "acceptButton" id='acceptButton'>
-					<Image class='controllButtonImg' id='' src="file://{resources}/images/custom_game/DonateShop/green_btn.png" />
-					<Label class = "BuyControlButtonText" text='#yes'/>
+				
+				<Panel id="MainShopPanel">
+					<Panel id="DonateShopTabsPanel" />
+					<Panel class="DonateShopContentPanel" id="DonateShopContentPanel" />
+				
 				</Panel>
+				<Panel id="discord">
+					<Button id="dis" onactivate="DOTADisplayURL(https://discord.gg/M6rJS9qF29);">
+						<Image class="avatar1" src="s2r://panorama/images/custom_game/discord.png" />
+					</Button>
+				</Panel>
+			</Panel>
+			<Panel class="BuyControl" id="BuyControl">
+				<Image class="BuyControlCurDon" id="BuyControlCurDon" src="s2r://panorama/images/custom_game/donateshop/bg_gem.png" />
+				<Image class="BuyControlCurRp" id="BuyControlCurRp" src="s2r://panorama/images/custom_game/donateshop/bg_shid.png" />
+				<Label id="BuyControlTextLine1" class="BuyControlTextLine1" text="Подтверждение покупки" />
+				<Label id="BuyControlTextLine3" class="BuyControlTextLine1" text="300" />
+				<Panel class="acceptButton" id="acceptButton">
+					<Image class="controllButtonImg" id="" src="s2r://panorama/images/custom_game/donateshop/green_btn.png" />
+					<Label class="BuyControlButtonText" text="yes" />
+				</Panel>
+				<!-- <Panel class="cancelButton" id="cancelButton" onmouseactivate="$(#BuyControl).visible = false;$(#accept_shadow).visible = false;"> -->
+					<!-- <Image class="controllButtonImg" id="" src="s2r://panorama/images/custom_game/donateshop/red_btn.png" /> -->
+					<!-- <Label class="BuyControlButtonText" text="no" /> -->
+				<!-- </Panel> -->
 				<Panel class = "cancelButton" id='cancelButton' onmouseactivate="$('#BuyControl').visible = false;$('#accept_shadow').visible = false;">
 					<Image class='controllButtonImg' id='' src="file://{resources}/images/custom_game/DonateShop/red_btn.png" />
-					<Label class = "BuyControlButtonText" text='#no'/>
+					<Label class = "BuyControlButtonText" text='no'/>
 				</Panel>
-			</Panel>					
+			</Panel>
 		</Panel>
-    </Panel>
+	</Panel>
 </root>

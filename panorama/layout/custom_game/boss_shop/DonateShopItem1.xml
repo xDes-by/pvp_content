@@ -1,48 +1,39 @@
 <root>
 	<styles>
-		<include src="file://{resources}/layout/custom_game/boss_shop/shop.css" />
+		<include src="s2r://panorama/layout/custom_game/boss_shop/shop.css" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
 	</styles>
-	
-	    <scripts>
-        <include src="file://{resources}/layout/custom_game/boss_shop/shop.js" />
-    </scripts>
-
-
-	<Panel class = "DonateShopItem1">
-		<DOTAItemImage id='DonateShopItem' class="DonateShopItem" hittest="true" itemname="">
-			<Image id='DonateShopImg' class="DonateShopImg" src=""/>
+	<Panel class="DonateShopItem1">
+		<DOTAItemImage id="DonateShopItem" class="DonateShopItem" hittest="true" itemname="">
+			<Image id="DonateShopImg" class="DonateShopImg" src="" />
 		</DOTAItemImage>
-		
-		<Label id = "DonateShopItemLabel" class="DonateShopItemLabel" text='Аганим'/>
-		<Panel id = 'DonateShopItemButtonBuy' class="DonateShopItemButtonBuy">
+		<Label id="DonateShopItemLabel" class="DonateShopItemLabel" text="Аганим" />
+		<Panel id="DonateShopItemButtonBuy" class="DonateShopItemButtonBuy">
 			<Panel id="shop_button_price_container_don" class="">
-				<Panel class='shopButtonImgAndText' id='shopButtonImgAndText1'>
-					<Label id='DonateShopItemButtonLabelNotAlign1' class="DonateShopItemButtonLabelNotAlign" text='500'/>
-					<Image class='shopButtonImg' id='shopButtonImg1' src="file://{resources}/images/custom_game/DonateShop/money_logo.png" />
+				<Panel class="shopButtonImgAndText" id="shopButtonImgAndText1">
+					<Label id="DonateShopItemButtonLabelNotAlign1" class="DonateShopItemButtonLabelNotAlign" text="500" />
+					<Image class="shopButtonImg" id="shopButtonImg1" src="s2r://panorama/images/custom_game/donateshop/money_logo_3.png" />
 				</Panel>
 			</Panel>
 			<Panel id="shop_button_price_container_rp" class="">
-				<Panel class='shopButtonImgAndText' id='shopButtonImgAndText2'>
-					<Label id='DonateShopItemButtonLabelNotAlign2' class="DonateShopItemButtonLabelNotAlign" text='500'/>
-					<Image class='shopButtonImg' id='shopButtonImg2' src="file://{resources}/images/custom_game/DonateShop/bonus_coins.png" />
+				<Panel class="shopButtonImgAndText" id="shopButtonImgAndText2">
+					<Label id="DonateShopItemButtonLabelNotAlign2" class="DonateShopItemButtonLabelNotAlign" text="500" />
+					<Image class="shopButtonImg" id="shopButtonImg2" src="s2r://panorama/images/custom_game/donateshop/protection.png" />
 				</Panel>
 			</Panel>
 		</Panel>
-		
-		<Panel id = "UpgradePet" class="UpgradePet" onmouseover="TipsOver('UpgradePet','UpgradePet')" onmouseout="TipsOut()">	
+		<ToggleButton id="smart_toggle" text="" />
+		<Panel id="DonateShopItemButtonHas" class="DonateShopItemButtonHas">
+			<Label id="DonateShopItemButtonLabel" class="DonateShopItemButtonLabel" text="Взять" />
 		</Panel>
-		
-		<Panel id = "levelpets" class="levelpets">	
-			<Label id = 'UpgradePetText' class="UpgradePetText" text=''/>
+		<Panel id="DonateShopItemButtonGived" class="DonateShopItemButtonGived">
+			<Label id="DonateShopItemButtonLabelGived" class="DonateShopItemButtonLabelGived" text="Выдано" />
 		</Panel>
-		<Panel id = "DonateShopItemButtonHas" class="DonateShopItemButtonHas">
-			<Label id = 'DonateShopItemButtonLabel' class="DonateShopItemButtonLabel" text='Взять'/>
+		<Panel id="DonateShopItemButtonActive" class="DonateShopItemButtonActive">
+			<Label id="DonateShopItemButtonLabelActive" class="DonateShopItemButtonLabelActive" text="Выдано" />
 		</Panel>
-		<Panel id = "DonateShopItemButtonGived" class="DonateShopItemButtonGived">
-			<Label id = 'DonateShopItemButtonLabelGived' class="DonateShopItemButtonLabelGived" text='Выдано'/>
-		</Panel>
-		<Panel id = "DonateShopItemButtonActive" class="DonateShopItemButtonActive">
-			<Label id = 'DonateShopItemButtonLabelActive' class="DonateShopItemButtonLabelActive" text='фыв'/>
+		<Panel id="DonateShopItemButtonNeedMore" class="DonateShopItemButtonNeedMore">
+			<Label id="DonateShopItemButtonLabelNeedMore" class="DonateShopItemButtonLabelNeedMore" text="need_more" />
 		</Panel>
 	</Panel>
 </root>

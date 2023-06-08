@@ -1,7 +1,0 @@
-<root>
-	<scripts>
-		<include src="s2r://panorama/layout/custom_game/scripts/utils.js" />
-		<include src="s2r://panorama/layout/custom_game/tooltip_extender/tooltip_extender.js" />
-	</scripts>
-	<Panel style="visibility: collapse;" />
-</root>
